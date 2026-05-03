@@ -1,0 +1,58 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "autosave": "on_focus_change",
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "icon_theme": "Catppuccin Latte",
+  "cli_default_open_behavior": "existing_window",
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.3-codex",
+      "enable_thinking": false,
+    },
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.5",
+      "enable_thinking": true,
+      "effort": "high",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "vim_mode": true,
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+      "favorite_config_option_values": {
+        "model": ["github-copilot/gpt-5.5"],
+      },
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Rosé Pine Moon",
+  },
+}
